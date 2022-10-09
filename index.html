@@ -5,33 +5,185 @@
   <meta charset="UTF-8">
 </head>
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Cutive+Mono">
+
 <style>
 body {
-  font-family:courier; 
+  font-family:'DM Mono'; 
   background-color: white;
   color: black;
+  text-align: center;
+  padding-left: 0%;
+  padding-right: 0%;
   }
-h1   {color: grey;}
-h2    {color: darkgrey;}
-h4    {color: darkgrey;}
+h1   {color: grey; 	 text-align: center;}
+h2    {color: darkgrey; text-align: center;}
+h4    {color: darkgrey; text-align: center;}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  padding: 1px;
+  width: 150px;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  vertical-align: middle;
+}
+
+.test { border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.proj { 
+  <!--border: 2px outset lightgrey;-->
+  background-color: white;
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 10px;
+}
+
 </style>
 
 <body>
 
-<h1>Elizabeth A. Stone </h1> 
+<div class="header">
+  <h1>Elizabeth A. Stone</h1>
+  <p>Making robots a reality.</p>
+</div>
 
-Welcome to my website! There's not much here yet XD <br> <br>
+<div class="proj">
+Welcome to my website! There's not much here yet <br> <br>
 
 
 but you can view my linkedin profile here: <a href="https://www.linkedin.com/in/tebazil12/">Tebazil12</a><br>
 or my github here: <a href="https://github.com/Tebazil12">Tebazil12</a> <br>
 
+</div>
 
 <h2> About me </h2>
-I'm a research roboticist nearing the end of my PhD
+
+
+I'm a research roboticist nearing the end of my PhD<br>
+<br>
+Member of the Tactile Robotics Group at Bristol Robotics Lab<br>
+<img src="https://www.bristol.ac.uk/media-library/sites/engineering/research/tactile-robotics/group-photo-hero.jpg" alt="AberSailbot" style="width:50%;" class="center">
+<br>
+And the FARSCOPE CDT 
+<br>
+
 
 <h2> Publications </h2>
-<p> &#9997; Walking on TacTip toes - <a href="https://arxiv.org/abs/2008.05240">arxiv</a>   <a href="https://ieeexplore.ieee.org/abstract/document/9341565">ieee</a></p>
-<p> &#9997; Learning to Live Life on the Edge - <a href="https://arxiv.org/abs/1909.05808">arxiv</a>   <a href="https://ieeexplore.ieee.org/abstract/document/9340926">ieee</a></p>
+<p> &#9997; [Submitted to ICRA2023] Feeling Inclined - <a href="https://arxiv.org/abs/1909.05808">arxiv</a>  </p>
+    <embed src="iros2022-poster-4.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0" type="application/pdf" width="50%" height="500px">
+    
+<p> &#9997; [IROS2020] Walking on TacTip toes - <a href="https://arxiv.org/abs/2008.05240">arxiv</a>   <a href="https://ieeexplore.ieee.org/abstract/document/9341565">ieee</a><br>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/qNixEHg3ML8" title="Walking on TacTip toes: A tactile sensing foot for walking robots" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+<p> &#9997; [IROS2020] Learning to Live Life on the Edge - <a href="https://arxiv.org/abs/1909.05808">arxiv</a>   <a href="https://ieeexplore.ieee.org/abstract/document/9340926">ieee</a></p>
+
+<br>
+
+<h2> Projects </h2>
+
+<div class="proj">
+<h4> Hearts Rebooted</h4>
+<img src="https://lh5.googleusercontent.com/gghqyiDKtj-Pm0bEghDSU6rtj8J74qjMrdRImvEL_9XA856_ixPG81763HWPvYoFvzYOlME7LLncf7yzaoJp0IOzB7k-iLUvaxITA6yzbVgEYzkXqSNuBDJb051rq6e-7g=w1280" alt="AberSailbot" style="width:45%;">
+<img src="https://media-exp1.licdn.com/dms/image/C4D22AQGz6WNMdT5ilA/feedshare-shrink_800/0/1631260867510?e=1668038400&v=beta&t=Aznuab6Hq6XdmShzvUIk0kyTBUjZhWNKqC53uGUg6a0" alt="AberSailbot" style="width:45%;"><br>
+Making a quadruped robot for assistive living
+</div>
+
+<br>
+
+<div class="proj">
+<h4> Hearts </h4>
+<img src="https://lh5.googleusercontent.com/gghqyiDKtj-Pm0bEghDSU6rtj8J74qjMrdRImvEL_9XA856_ixPG81763HWPvYoFvzYOlME7LLncf7yzaoJp0IOzB7k-iLUvaxITA6yzbVgEYzkXqSNuBDJb051rq6e-7g=w1280" alt="AberSailbot" style="width:45%;">
+<img src="https://pbs.twimg.com/media/Dog5tC_XUAA7Vc3?format=jpg&name=large" alt="AberSailbot" style="width:45%;"><br>
+Programming robots for assistive living <br>
+<!--
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Teams have spent the whole day setting up their robots. Tomorrow don&#39;t forget to pass by the <a href="https://twitter.com/hashtag/IROS2018?src=hash&amp;ref_src=twsrc%5Etfw">#IROS2018</a> competition area to see the <a href="https://twitter.com/hashtag/ERL?src=hash&amp;ref_src=twsrc%5Etfw">#ERL</a> in full colour. <a href="https://twitter.com/RoboticsEU?ref_src=twsrc%5Etfw">@RoboticsEU</a> <a href="https://twitter.com/SPARCrobotics?ref_src=twsrc%5Etfw">@SPARCrobotics</a> <a href="https://twitter.com/PALRobotics?ref_src=twsrc%5Etfw">@PALRobotics</a> <a href="https://twitter.com/hashtag/servicerobots?src=hash&amp;ref_src=twsrc%5Etfw">#servicerobots</a> <a href="https://twitter.com/hashtag/athome?src=hash&amp;ref_src=twsrc%5Etfw">#athome</a> <a href="https://twitter.com/UWEBristol?ref_src=twsrc%5Etfw">@UWEBristol</a> <a href="https://twitter.com/BristolRobotLab?ref_src=twsrc%5Etfw">@BristolRobotLab</a> <a href="https://twitter.com/EUSciComm?ref_src=twsrc%5Etfw">@EUSciComm</a> <a href="https://twitter.com/eu_Robotics?ref_src=twsrc%5Etfw">@eu_Robotics</a> <a href="https://t.co/yxMnstcUCP">pic.twitter.com/yxMnstcUCP</a></p>&mdash; ERL robotics league (@ERLrobotleague) <a href="https://twitter.com/ERLrobotleague/status/1046854708416208896?ref_src=twsrc%5Etfw">October 1, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+-->
+</div>
+
+<br>
+<!--
+<h4> Group Project - Pick and Place </h4>
+
+<img src="https://photos.google.com/share/AF1QipNd2ekUzeMeeYE_BI72zRHe0OZPpRDu1WL_59FuyI1Hvkk_X4B3XBDKg9doJ4D9cA/photo/AF1QipPvLhf2xtmeTCRxL8KQI1clRi8jp6U9F9r9SRE?key=b0tDVVVIdFlETkxvMjJQQ3pSLXdQWVppekUtNGNR" alt="AberSailbot" style="width:45%;">
+-->
+
+<br>
+<div class="proj">
+<h4> AberSailbot </h4>
+<img src="https://raw.githubusercontent.com/abersailbot/abersailbot.github.io/master/images/abersailbot-card.png" alt="AberSailbot" style="width:100%;"><br>
+<img src="https://raw.githubusercontent.com/abersailbot/abersailbot.github.io/master/images/WRSC2015.jpg" alt="AberSailbot" style="width:21%;">
+<img src="https://raw.githubusercontent.com/abersailbot/abersailbot.github.io/master/images/WRSC2016.jpg" alt="AberSailbot" style="width:21%;">
+<img src="https://raw.githubusercontent.com/abersailbot/abersailbot.github.io/master/images/Sailbot2016.jpg" alt="AberSailbot" style="width:22%;">
+<img src="https://raw.githubusercontent.com/abersailbot/abersailbot.github.io/master/images/Sailbot2017.jpg" alt="AberSailbot" style="width:22%;">
+<br>
+Fully autonomous, open-source, wind powered boats!
+</div>
+
+<br>
+
+<div class="proj">
+<h4> BSc Project - Backpackable Robot Boat </h4>
+<img src="https://www.aber.ac.uk/slider-files/files/large/ADN/100/53843.jpg" alt="AberSailbot" style="width:50%;">
+</div>
+
+<h2> Experience </h2>
+
+<div class="proj">
+I was part of the <a href="https://vimeo.com/user134254833"> content</a> creators scheme at <a href="https://taughtbyhumans.com/"> Taught by Humans</a><br>
+
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/589801945?h=5465acf0a3" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2> Education </h2>
+
+<div class="proj">
+<div class="row">
+  <div class="column">
+<img src="https://www.aber.ac.uk/img/logo/au-logo.svg" alt="AberSailbot" style="width:100%;">
+  </div>
+  <div class="column">
+<img src="https://www.datocms-assets.com/7860/1648651835-logo-colour.jpeg?auto=compress&dpr=1&fm=webp&h=50&w=180" alt="AberSailbot" style="width:100%;">
+  </div>
+  <div class="column">
+<img src="https://www.writhlington.org.uk/wp-content/uploads/2015/12/uwe-logo.png" alt="AberSailbot" style="width:100%;">
+  </div>
+  <div class="column">
+<img src="https://echord.eu/public/wp-content/uploads/2016/01/bristol-rob-lab.png" alt="AberSailbot" style="width:100%;">
+  </div>
+</div>
+</div>
+<div class="footer">
+  <p>Footer</p>
+</div>
 
 </body>
